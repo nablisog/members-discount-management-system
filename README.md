@@ -133,7 +133,5 @@ Future Enhancements
 - Implement HTML-based email templates using Thymeleaf.
 - Add Spring Security for authentication and role-based authorization.
 
-License
--------
-This project is open source and may be used, modified, or distributed under the terms of the MIT License.
+
 
