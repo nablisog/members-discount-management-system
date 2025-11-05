@@ -57,29 +57,44 @@ Steps:
 1. Clone the project repository.
 2. Configure the following properties in application.properties:
    spring.datasource.url=jdbc:mysql://localhost:3306/membersdb
-   spring.datasource.username=root
+   
+   spring.datasource.username=yourusername
+   
    spring.datasource.password=yourpassword
+   
    spring.jpa.hibernate.ddl-auto=create-drop
+   
    spring.mail.username=your-email@gmail.com
+   
    spring.mail.password=your-app-password
+   
    external.api.get.url=https://api-generator.retool.com/VRlTnt/data
+   
    external.api.post.url=https://api-generator.retool.com/VRlTnt/data
-3. Build the project using:
+   
+4. Build the project using:
    mvn clean install
-4. Run the application using:
+5. Run the application using:
    mvn spring-boot:run
-5. Access the Swagger UI at:
+6. Access the Swagger UI at:
    http://localhost:8080/integration
 
 API Endpoints
 --------------
 GET    /members                       - Retrieve all members
+
 GET    /members/fetchAndSave          - Fetch and save members from external API
+
 POST   /members/eligibleFordiscount   - Send eligible discounted members to external API
+
 GET    /members/unpaidMembers         - Retrieve members who have not paid
+
 GET    /members/paidMembers           - Retrieve members who have paid
+
 POST   /members/reminders             - Send payment reminder emails
+
 POST   /members/sendDiscountToMembers - Send discount notification emails
+
 
 Business Logic Summary
 ----------------------
